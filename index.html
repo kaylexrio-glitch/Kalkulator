@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kalkulator">
+    <div class="layar" id="layar">0</div>
+
+    <div class="tombol-grid">
+      <button class="hapus" onclick="bersihkan()">C</button>
+      <button class="hapus" onclick="hapusSatu()">⌫</button>
+      <button class="operator" onclick="tekanOperator('%')">%</button>
+      <button class="operator" onclick="tekanOperator('/')">÷</button>
+
+      <button onclick="tekanAngka('7')">7</button>
+      <button onclick="tekanAngka('8')">8</button>
+      <button onclick="tekanAngka('9')">9</button>
+      <button class="operator" onclick="tekanOperator('*')">×</button>
+
+      <button onclick="tekanAngka('4')">4</button>
+      <button onclick="tekanAngka('5')">5</button>
+      <button onclick="tekanAngka('6')">6</button>
+      <button class="operator" onclick="tekanOperator('-')">−</button>
+
+      <button onclick="tekanAngka('1')">1</button>
+      <button onclick="tekanAngka('2')">2</button>
+      <button onclick="tekanAngka('3')">3</button>
+      <button class="operator" onclick="tekanOperator('+')">+</button>
+
+      <button class="nol" onclick="tekanAngka('0')">0</button>
+      <button onclick="tekanTitik()">.</button>
+      <button class="sama" onclick="tekanSamaDengan()">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
